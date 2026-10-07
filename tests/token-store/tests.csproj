@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0-windows</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><DefineConstants Condition="'$(UiLanguage)' == 'en'">$(DefineConstants);UI_EN</DefineConstants></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Account.cs" Link="Account.cs" />
+    <Compile Include="../../TokenStore.cs" Link="TokenStore.cs" />
+    <Compile Include="../../UiText.cs" Link="UiText.cs" />
+    <Compile Include="../../FirestormApi.cs" Link="FirestormApi.cs" />
+    <Compile Include="../../TokenValidation.cs" Link="TokenValidation.cs" />
+    <Compile Include="../../LauncherCreds.cs" Link="LauncherCreds.cs" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.12" />
+  </ItemGroup>
+</Project>

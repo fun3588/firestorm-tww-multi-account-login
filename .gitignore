@@ -1,0 +1,17 @@
+# Build and tool outputs
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+
+# Sensitive data (Strictly ignored)
+data/*.json
+*.json.bak
+*.token
+*.creds
+
+# Logs and runtime caches
+*.log
+webview/
